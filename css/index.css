@@ -147,11 +147,11 @@ body {
   font-weight: bold;
   letter-spacing: 1px;
 }
-.header .date {
+.header .B {
   margin-left: 25px;
   flex: 1;
 }
-.header .temp {
+.header .E {
   text-align: right;
   margin-right: 25px;
   flex: 1;
@@ -256,4 +256,13 @@ body {
 }
 .cards-container .card .author span .git {
   text-decoration: none;
+}
+.footer .inner {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: row;
+}
+.inner {
+  border: 2px solid red;
 }
