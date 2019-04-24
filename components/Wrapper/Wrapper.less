@@ -1,3 +1,26 @@
 .inner{
-    .test();
+    .border-bottom-grey();
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+h1{
+    font-family: Didot, serif;
+    font-weight: bold;
+    flex: 8;
+    text-align: center;
+    color: @color-primary;
+}
+button{
+    text-align: center;
+	margin: 0 5px;
+	padding: 2px 10px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	cursor: pointer;
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+}
 }

@@ -7,6 +7,9 @@
 .test {
   border: 2px solid red;
 }
+.border {
+  border: 1px solid #1f1d1d;
+}
 @font-face {
   font-family: 'PT Sans';
   font-style: italic;
@@ -219,7 +222,7 @@ body {
   }
 }
 .cards-container .card {
-  border-bottom: 1px solid #1f1d1d;
+  border: 1px solid #1f1d1d;
   display: flex;
   justify-content: space-between;
   align-items: none;
@@ -259,10 +262,33 @@ body {
 }
 .footer .inner {
   display: flex;
-  justify-content: none;
-  align-items: none;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
 }
 .inner {
-  border: 2px solid red;
+  border-bottom: 1px solid #1f1d1d;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+}
+h1 {
+  font-family: Didot, serif;
+  font-weight: bold;
+  flex: 8;
+  text-align: center;
+  color: #333;
+}
+button {
+  text-align: center;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+button:hover {
+  text-decoration: underline;
 }
