@@ -1,6 +1,17 @@
-.center() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.width-100 {
+    width: 100%;
   }
   
+  .border-bottom-grey {
+    border-bottom: 1px solid @color-lightgrey;
+  }
+  
+  .flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }
+  .test {
+    border: 2px solid red;
+  }

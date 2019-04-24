@@ -1,13 +1,26 @@
-@import "variables";
+@import './variables';
+@import './mixins';
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 
-@import "mixins";
+* {
+  box-sizing: border-box;
+}
 
-@import "reset";
+html, body {
+  margin: 0; 
+  padding: 0;
+}
 
-@import "global";
+body {
+  .flex(none, center, column);
+  background-color: @color-background;
+  color: @color-primary;
+  font-family: 'PT Sans', sans-serif;
+}
 
-@import "navigation";
-
-@import "footer";
-
-@import "home-page";
+@import './components/Topbar/Topbar';
+@import './components/Header/Header';
+@import './components/Tabs/Tabs';
+@import './components/Cards/Cards';
+@import './components/Footer/Footer';
+@import './components/Wrapper/Wrapper';
