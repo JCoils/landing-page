@@ -1,8 +1,14 @@
+.wrapper{
+    width: 100%;
+    font-size: 62.5%;
+}
+
 .inner{
     .border-bottom-grey();
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 h1{
 
@@ -17,13 +23,26 @@ h1{
     align-content: center;
     justify-content: center;
     width: 20%;
+    margin-bottom: 20px;
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: @color-primary;
    }
    
-   .trip-button:hover {
+.trip-button:hover {
      background: @color-pink;
-   }
+}
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+    }
+}
 
