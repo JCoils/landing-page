@@ -1,26 +1,29 @@
 .inner{
     .border-bottom-grey();
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
 }
 h1{
+
     font-family: Didot, serif;
     font-weight: bold;
     flex: 8;
     text-align: center;
     color: @color-primary;
 }
-button{
-    text-align: center;
-	margin: 0 5px;
-	padding: 2px 10px;
-	font-size: 12px;
-	letter-spacing: 2px;
-	cursor: pointer;
-    font-weight: bold;
-    &:hover {
-        text-decoration: underline;
-}
-}
+.trip-button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 20%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: @color-primary;
+   }
+   
+   .trip-button:hover {
+     background: @color-pink;
+   }
+
