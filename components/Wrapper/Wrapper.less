@@ -33,16 +33,52 @@ h1{
 .trip-button:hover {
      background: @color-pink;
 }
-.imgs {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
-    img {
-        width: 28%;
-        margin: 20px 2.5%;
-        border-radius: 20px;
-        height: 100%;
-    }
+.content{
+    border: 5px solid blue;
+    .content-section {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+       
+        
+        .text-content {
+          width: 48%;
+          padding-right: 1%;
+    
+        }
+    
+        .img-content {
+          width: 48%;
+          padding-left: 1%;
+    
+          img {
+            border-radius: 10px;
+    
+    
+          }
+        }
+      }
+    
+      .inverse-content {
+        padding-bottom: 30px;
+        border-bottom: 2px dashed @color-primary;
+    
+        .text-content {
+          padding-left: 1%;
+          padding-right: 0;
+    
+    
+        }
+    
+        .img-content {
+          padding-right: 1%;
+          padding-left: 0;
+    
+    
+        }
+      }
 }
+
 
